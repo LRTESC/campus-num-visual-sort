@@ -11,6 +11,6 @@ import edu.campusnum.visualsort.model.ObservableArray;
 public class HeapSort implements SortAlgorithm{
     @Override
     public void sort(ObservableArray array) {
-        throw new UnsupportedOperationException("Not implemented");
+
     }
 }
