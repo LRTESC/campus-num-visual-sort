@@ -8,9 +8,41 @@ import edu.campusnum.visualsort.model.ObservableArray;
  * Date: 27/07/2023
  * Time: 16:31
  */
-public class QuickSort implements SortAlgorithm{
+public class QuickSort implements SortAlgorithm {
+    int premier;
+    int dernier;
+    int partition;
+    int quickSort;
+
     @Override
+
     public void sort(ObservableArray array) {
-        throw new UnsupportedOperationException("Not implemented");
+        if (2 <= array.getLength()) {
+            int pi = partition(array, premier, dernier);
+            quickSort(array, premier, pi - 1);
+            quickSort(array, pi + 1, dernier);
+        }
+    }
+
+    private void quickSort(ObservableArray array, int premier, int i) {
+
+    }
+
+    private int partition(ObservableArray array, int premier, int dernier) {
+        return premier;
+    }
+
+    public void setPartition(ObservableArray array, int premier, int dernier) {
+        int pivot = dernier;
+        int j = premier;
+        for (int i = premier; i < dernier; i++) {
+            if (array.get(i) <= array.get(pivot)) {
+                array.swap((i), (j));
+                j = j + 1;
+            }
+        }
+        array.swap((dernier), j);
+        return j;
     }
 }
+
