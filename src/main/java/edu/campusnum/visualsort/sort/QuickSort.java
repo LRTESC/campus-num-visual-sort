@@ -24,7 +24,6 @@ public class QuickSort implements SortAlgorithm {
         }
     }
 
-
     public int partition(ObservableArray array, int premier, int dernier) {
         int pivot = dernier;
         int j = premier;

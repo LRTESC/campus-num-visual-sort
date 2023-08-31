@@ -43,4 +43,5 @@ public interface ObservableArray extends Iterable<Integer> {
      * @return
      */
     public ObservableArray slice(int left, int count);
+
 }
