@@ -95,6 +95,11 @@ public class SortState {
             return new ArraySlice(this.start + start, count);
         }
 
+        @Override
+        public void set(int j, int value) {
+
+        }
+
         /**
          * Swap value at given position
          * @param left

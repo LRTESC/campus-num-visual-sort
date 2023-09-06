@@ -44,4 +44,6 @@ public interface ObservableArray extends Iterable<Integer> {
      */
     public ObservableArray slice(int left, int count);
 
+    void set(int j, int value);
+
 }
